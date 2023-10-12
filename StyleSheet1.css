@@ -1,0 +1,435 @@
+﻿html {
+  height: 100vh;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: #ecdbba;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  background-color: #ecdbba;
+  
+}
+.carousel {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  text-align: center;
+}
+
+.diaporama {
+  width: 100%;
+  flex-flow: row wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.conteneur {
+  width: 100%;
+  border: 1px solid black;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.conteneur h1 {
+  text-align: center;
+  background-color: #396eb0;
+  margin: 5px;
+}
+
+.map {
+  border: 1px solid black;
+  width: 66%;
+  margin-top: 5px;
+  display: flex;
+  max-height: 40%;
+  margin-bottom: 5px;
+}
+
+#myMap {
+  height: 100%;
+  border: 4px solid #96500f;
+  position: relative;
+  left:3%;
+  border-radius: 40px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.details {
+  border: 2px solid #396eb0;
+  position: relative;
+  border-radius:25px;
+  right:3%;
+  width: 25%;
+  margin-top: 5px;
+  display: flex;
+  height: 40%;
+  margin-bottom: 5px;
+  background-image: url("https://cdn.pixabay.com/photo/2019/05/15/05/24/bicycle-4204164_960_720.jpg");
+  background-size: cover;
+}
+/* ----------- Diapo --------------- */
+
+.elements {
+  display: flex;
+  transition: 1s linear;
+}
+
+.element {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.element > img {
+  width: 100%;
+  height: 102%;
+}
+
+/*--------------- Messages d'erreur --------------- */
+
+#error {
+  display: none;
+}
+#defaultInfo {
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  bottom: 35%;
+}
+#defaultInfo > p {
+  margin: 5px;
+  font-weight: bolder;
+}
+#ErrorAlert {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+  font-size: larger;
+  max-width: 80%;
+
+  position: relative;
+  top: -1%;
+  left: 40%;
+
+  margin-top: 13px;
+
+  display: none;
+}
+/* ---------------- Icônes ---------------- */
+
+.btngauche {
+  position: absolute;
+  bottom: 40%;
+}
+.btndroite {
+  position: absolute;
+  bottom: 40%;
+  right: 0%;
+}
+
+.pause {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
+.play {
+  position: absolute;
+  bottom: 5%;
+  right: 55%;
+}
+
+#message {
+  border: solid 2px #ecdbba;
+  position: absolute;
+  width: 200px;
+  height: 95px;
+  bottom: 245%;
+  left: 16%;
+  border-radius: 15px;
+  padding-bottom: 10px;
+  padding-top: 35px;
+}
+
+/* ----------------- Formulaire ----------------- */
+
+form {
+  margin-left: 45px;
+  background-color: rgba(58, 139, 172, 0.8);
+}
+
+form label {
+  margin-left: 11px;
+  color: #fffefb;
+  display: inline-block;
+  text-align: right;
+}
+
+.details {
+  background-color: #ecdbba;
+}
+/*------- Formulaire en lui même ----------- */
+
+.details > #Reservation {
+  border: double 8px black;
+  position: relative;
+  height: 55%;
+  margin: auto;
+  width: initial;
+  padding-right: 50px;
+  padding-top: 98px;
+  border-radius: 15px;
+}
+
+.details > form:nth-child(1) > div:nth-child(1) > input:nth-child(2) {
+  margin-left: 20px;
+  padding-right: 2px;
+}
+.details > form:nth-child(1) > div:nth-child(2) > input:nth-child(2) {
+  margin-right: 2px;
+  margin-left: 2px;
+}
+#mail {
+  margin-left: 8px;
+}
+form button {
+  position: relative;
+  left: 45%;
+  margin-top: 15px;
+}
+.input {
+  position: relative;
+  top: 35%;
+}
+.reserver {
+  position: relative;
+  top: 35%;
+}
+
+.open-button {
+  background-color: #ecdbba;
+  padding: 8px 10px;
+  border-color: #886f0c;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  top: 40%;
+}
+
+#Timer {
+  text-align: center;
+  display: none;
+  position: relative;
+  max-width: 50%;
+  border: 5px solid #96500f;
+  border-radius: 20px;
+  border-width: 1px;
+  max-height: 100%;
+  height: 80%;
+  width: 100%;
+  right: -24%;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ------------ Popup ---------------- */
+
+#SignatureBox {
+  position: relative;
+  width: 45%;
+  height: 30%;
+  z-index: 1;
+  border: solid 3px #396eb0;
+  border-radius: 10px;
+  background: #ecdbba;
+  left: 35%;
+  top: 20%;
+  max-width: 500px;
+  min-width: 500px;
+  background-image: url(images/contract-g9def2c0d4_640.jpg);
+}
+
+#SignatureBox > p {
+  display: flex;
+  justify-content: center;
+  margin-top: 85px;
+  color: #bb0505;
+  font-weight: bold;
+  text-align: center;
+  background-color: #ecdbba;
+}
+#boxPopup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#Effacer {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 52%;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background: #396eb0;
+  color: white;
+}
+
+#Valider {
+  display: flex;
+  position: absolute;
+  bottom: 5%;
+  left: 35%;
+  padding: 7px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background: #396eb0;
+  color: white;
+}
+
+#Close {
+  left: 93%;
+  display: flex;
+  position: absolute;
+  padding: 0px;
+  color: #396eb0;
+  border: thin;
+  border-radius: 50%;
+  font-size: 15px;
+}
+
+/* Hide Popup*/
+.form-popup {
+  z-index: 9;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-x: scroll;
+  margin: 0 auto;
+}
+
+/* -------- Canvas ------------ */
+
+#Signature {
+  width: 200px;
+  height: 90px;
+  border: inset 2px;
+  border-radius: 15px;
+  background: #f8f7f6;
+  margin-left: 147.5px;
+  margin-right: 147.5px;
+  cursor: crosshair;
+}
+
+/* ---------- Media Queries ------------ */
+@media (max-width: 2560px) {
+  #ErrorAlert {
+    left: 42%;
+  }
+  #Reservation {
+    height: 44%;
+  }
+  .pause {
+    left: 61%;
+  }
+  .start {
+    right: 61%;
+  }
+}
+@media (max-width: 1440px) {
+  #ErrorAlert {
+    left: 35%;
+  }
+  .pause {
+    left: 58%;
+  }
+  #Timer {
+    line-height: 240%;
+  }
+}
+@media (max-width: 1024px) {
+  #message {
+    bottom: 230%;
+    left: 18%;
+  }
+  #ErrorAlert {
+    left: 30%;
+  }
+  .pause {
+    left: 56%;
+  }
+  #Timer {
+    margin-top: 5px;
+  }
+  footer {
+    height: 81px;
+  }
+}
+
+@media (max-width: 813px) {
+  #Reservation label {
+    display: contents;
+  }
+  #Reservation > .input {
+    left: 6%;
+  }
+  #ErrorAlert {
+    left: 20%;
+  }
+  #ErrorAlert > text {
+    left: 15%;
+
+    font-size: 25px;
+  }
+  #message {
+    left: 18%;
+  }
+  footer {
+    max-height: 100px;
+    height: 100%;
+  }
+  .pause {
+    left: 57%;
+  }
+  #SignatureBox {
+    left: 18%;
+  }
+
+  .details {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 40%;
+  }
+
+  #myMap {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+  }
+  #Timer {
+    line-height: 230%;
+  }
+}
