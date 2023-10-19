@@ -118,7 +118,14 @@ h1 {
   padding-right:20px;
   width:25%;
 }
-
+.Interraction{
+  width: 100%;
+    /* flex-flow: row wrap; */
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+  margin-top: 20px;
+}
 .map {
   border: 1px solid black;
   width: 66%;
