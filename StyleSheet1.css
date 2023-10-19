@@ -35,6 +35,46 @@ footer {
   height:65px;
 
 }
+.keypoints {
+  background-color:#96500f ;
+  border-radius:50px;
+  position: relative;
+  min-height: 100%;
+  width:33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.icon{
+  border: 1px solid #fbe6be;
+  margin: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:50px;
+  height:50px;
+}
+.keyPoint {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding:15px;
+  position: relative;
+  left:15%;
+}
+.keypointText{
+  max-width:45%;
+  font-weight: bolder;
+  font-size: larger;
+  color: #fbe6be;
+  text-stroke: 1px #efc5c5;
+  -webkit-text-stroke: 1px ; /* Webkit-based browsers, like Chrome */
+  text-stroke: 1px #efc5c5;
+}
+.fa-hand-pointer, .fa-pen-nib, .fa-font{
+color:#fbe6be;
+}
 .carousel {
   max-width: 100%;
   width: 100%;
@@ -48,21 +88,24 @@ footer {
 
 .diaporama {
   width: 100%;
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
+  flex-direction: row;
   display: flex;
   justify-content: space-between;
+  background-color: #96500f;
+  border-radius: 50px;
 }
 
 .conteneur {
-  width: 95%;
-  border: 5px solid #96500f;
+  width: 66%;
+  border: 5px solid #ecdbba;
   position: relative;
   overflow: hidden;
-  margin:auto;
+  margin:15px;
   border-radius:50px;
 }
 
-.diaporama h1 {
+h1 {
   text-align: center;
   background-color: #96500f;
   margin: auto;
