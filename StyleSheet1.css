@@ -94,12 +94,15 @@ color:#fbe6be;
   justify-content: space-between;
   background-color: #96500f;
   border-radius: 50px;
+  padding:10px 0px 10px 0px;
 }
 
 .conteneur {
   width: 66%;
-  border: 5px solid #ecdbba;
+  border: 7px solid #ecdbba;
   position: relative;
+  right: 2%;
+ 
   overflow: hidden;
   margin:15px;
   border-radius:50px;
