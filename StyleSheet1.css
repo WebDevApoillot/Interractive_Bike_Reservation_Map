@@ -147,6 +147,10 @@ h1 {
   overflow: hidden;
 }
 
+.leaflet-marker-icon{
+  color:#96500f;
+}
+
 .details {
   border: 4px solid #96500f;
   position: relative;
@@ -258,12 +262,13 @@ h1 {
 }
 
 #message {
-  border: solid 2px #96500f;
+  color:#fbe6be;
+  border: solid 2px #fbe6be;
   position: absolute;
   width: 200px;
   height: 95px;
   bottom: 200%;
-  left: 16%;
+  left: 20%;
   border-radius: 15px;
   padding-bottom: 10px;
   padding-top: 35px;
@@ -273,7 +278,7 @@ h1 {
 
 form {
   margin-left: 45px;
-  background-color: rgba(58, 139, 172, 0.8);
+  background-color: #96500f;
 }
 
 form label {
@@ -289,7 +294,7 @@ form label {
 /*------- Formulaire en lui même ----------- */
 
 .details > #Reservation {
-  border: double 8px black;
+  border: double 8px #fbe6be;
   position: relative;
   height: 55%;
   margin: auto;
@@ -339,6 +344,8 @@ form button {
   display: none;
   position: relative;
   max-width: 50%;
+  background-color: #96500f;
+  color: #fbe6be;
   border: 5px solid #96500f;
   border-radius: 20px;
   border-width: 1px;
@@ -355,7 +362,7 @@ form button {
 #SignatureBox {
   position: relative;
   width: 45%;
-  height: 30%;
+  height: 45%;
   z-index: 1;
   border: solid 3px #396eb0;
   border-radius: 10px;
