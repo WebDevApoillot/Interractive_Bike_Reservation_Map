@@ -36,9 +36,10 @@ let urlApi =
 fetch(urlApi)
   .then((data) => {
     return data.json();
+    
   })
-  .then((stations) => {
-    console.log(stations);
+  .then((stations) => { 
+   
     //LANCEMENT MARKEUR
     const markers = new Marqeurs(map.map, stations, "error");
   });
