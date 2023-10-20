@@ -46,7 +46,7 @@ footer {
   justify-content: space-between;
 }
 .icon{
-  border: 1px solid #fbe6be;
+  border: 3px solid #fbe6be;
   margin: 15px;
   border-radius: 50%;
   display: flex;
@@ -68,9 +68,7 @@ footer {
   font-weight: bolder;
   font-size: larger;
   color: #fbe6be;
-  text-stroke: 1px #efc5c5;
-  -webkit-text-stroke: 1px ; /* Webkit-based browsers, like Chrome */
-  text-stroke: 1px #efc5c5;
+
 }
 .fa-hand-pointer, .fa-pen-nib, .fa-font{
 color:#fbe6be;
@@ -179,6 +177,33 @@ h1 {
   height: 102%;
 }
 
+.play,.pause{
+  border-radius: 50%;
+  border:2px solid #fbe6be;
+  padding:0px;
+  background-color: #fbe6be;
+  color:#96500f
+}
+.btndroite,.btngauche{
+  border-radius: 50%;
+  border:2px solid #96500f;
+  padding:0px;
+  background-color: #96500f;
+  color:#fbe6be;
+}
+.play:hover, 
+.pause:hover{
+  background-color: #96500f;
+  color:#fbe6be;
+  border:#96500f;
+}
+
+.btndroite:hover,
+.btngauche:hover {
+  background-color: #fbe6be;
+  color:#96500f;
+  border:#fbe6be;
+}
 /*--------------- Messages d'erreur --------------- */
 
 #error {
