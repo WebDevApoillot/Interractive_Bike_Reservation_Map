@@ -1,138 +1,150 @@
 ﻿<!DOCTYPE html>
 
 <html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="StyleSheet1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="StyleSheet1.css" />
 
-    <script src="https://kit.fontawesome.com/50ab74dd38.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/50ab74dd38.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-     integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-     crossorigin=""/> 
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
 
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-     crossorigin=""></script> 
-    
-    <title> DéliBikes </title>
-</head>
-<body>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <title>DéliBikes</title>
+  </head>
+  <body>
     <div class="topBar">
-        <div class="Logo"></div>
+      <div class="Logo"></div>
     </div>
     <h1>Instructions d'utilisation:</h1>
     <div class="diaporama">
-        <div class="keypoints">
-            <div class="keyPoint">
-                <div class="icon"><i class="fa-regular fa-hand-pointer fa-2xl"></i></div>
-                <div class="keypointText">Commencez par sélectionner sur la carte interractive un marqueur de votre choix</div>
-            </div>
-            <div class="keyPoint">
-                <div class="icon"><i class="fa-solid fa-font fa-2xl"></i></div>
-                <div class="keypointText">Renseignez ensuite les informations du formulaire de réservation</div>
-            </div>
-            <div class="keyPoint">
-                <div class="icon"><i class="fa-solid fa-pen-nib fa-2xl"></i></div>
-                <div class="keypointText">Apposez votre signature sur le canvas, et enfin réservez votre vélo !</div>
-            </div>
+      <div class="keypoints">
+        <div class="keyPoint">
+          <div class="icon">
+            <i class="fa-regular fa-hand-pointer fa-2xl"></i>
+          </div>
+          <div class="keypointText">
+            Commencez par sélectionner sur la carte interractive un marqueur de
+            votre choix
+          </div>
         </div>
-        
-        <div class= "conteneur">
-             
-            <section id="carousel" class="carousel" data-interval="500">
-            <div class="elements">
-                <!-- Première diapo -->
+        <div class="keyPoint">
+          <div class="icon"><i class="fa-solid fa-font fa-2xl"></i></div>
+          <div class="keypointText">
+            Renseignez ensuite les informations du formulaire de réservation
+          </div>
+        </div>
+        <div class="keyPoint">
+          <div class="icon"><i class="fa-solid fa-pen-nib fa-2xl"></i></div>
+          <div class="keypointText">
+            Apposez votre signature sur le canvas, et enfin réservez votre vélo
+            !
+          </div>
+        </div>
+      </div>
 
-                <div class="element actif">
-                    <img src="images/etape_une.jpg" alt="Step 1">
-                    
-                </div>
+      <div class="conteneur">
+        <section id="carousel" class="carousel" data-interval="500">
+          <div class="elements">
+            <!-- Première diapo -->
 
-                <!-- Deuxième diapo -->
+            <div class="element actif">
+              <img src="images/etape_une.jpg" alt="Step 1" />
+            </div>
 
-                <div class="element">
-                    <img src="images/etape_deux.jpg" alt="Step 2">
-                    
-                </div>
+            <!-- Deuxième diapo -->
 
-                <!-- Troisième diapo -->
+            <div class="element">
+              <img src="images/etape_deux.jpg" alt="Step 2" />
+            </div>
 
-                <div class="element">
-                    <img src="images/etape_trois.jpg" alt="Step 3">
-                    
-                </div>
-       </div>
-    </section>
+            <!-- Troisième diapo -->
 
-       <button class="btngauche">
-       <i id="gauche" class="fa-solid fa-circle-chevron-left fa-4x"></i></button>
-       <button class="btndroite">
-       <i id="droite" class="fa-solid fa-circle-chevron-right fa-4x"></i></button>
-       <button class= "play">
-       <i id="start" class="fa-regular fa-circle-play fa-3x"></i></button>
-       <button class="pause">
-       <i id="stop" class="fa-regular fa-circle-pause fa-3x"></i></button>
+            <div class="element">
+              <img src="images/etape_trois.jpg" alt="Step 3" />
+            </div>
+          </div>
+        </section>
 
-     </div>
+        <button class="btngauche">
+          <i id="gauche" class="fa-solid fa-circle-chevron-left fa-4x"></i>
+        </button>
+        <button class="btndroite">
+          <i id="droite" class="fa-solid fa-circle-chevron-right fa-4x"></i>
+        </button>
+        <button class="play">
+          <i id="start" class="fa-regular fa-circle-play fa-3x"></i>
+        </button>
+        <button class="pause">
+          <i id="stop" class="fa-regular fa-circle-pause fa-3x"></i>
+        </button>
+      </div>
     </div>
     <div class="Interraction">
-    <div class="map" id="myMap">
-     </div>
+      <div class="map" id="myMap"></div>
 
-     
-    <div class="details">
-    
+      <div class="details">
         <form id="Reservation" action="" method="post">
-            <div class="input">
-                <label for="name">Nom :</label>
-                <input type="text" id="name" name="user_name" >
-            </div>
-            <div class="input">
-                <label for="surname">Prénom :</label>
-                <input type="text" id="surname" name="user_name"  >
-                
+          <div class="input">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="user_name" />
+          </div>
+          <div class="input">
+            <label for="surname">Prénom :</label>
+            <input type="text" id="surname" name="user_name" />
+          </div>
+
+          <div class="reserver">
+            <div id="message">
+              <p id="error"></p>
+              <div id="defaultInfo">
+                <p id="nameStation"></p>
+                <p id="adressStation"></p>
+                <p id="bikenumber"></p>
+              </div>
             </div>
 
-            <div class="reserver">
-                <div id="message">
-                    <p id="error"></p>
-                        <div id="defaultInfo">
-                            <p id="nameStation" ></p>
-                            <p id="adressStation" ></p>
-                            <p id="bikenumber" ></p>
-                        </div>
-                </div>
-            
-                <button input type="submit" id="Btnreserver" class="open-button"  > Réserver </button>
-
-            
-                
-
-                
-            </div>
+            <button input type="submit" id="Btnreserver" class="open-button">
+              Réserver
+            </button>
+          </div>
         </form>
         <div id="boxPopup">
-            <div id="SignatureBox">
-                <button id="Close" >
-                    <i class="fa-solid fa-circle-xmark fa-2x"></i></button>
-                    <p> Merci d'appliquer votre signature ci-après pour confirmer votre réservation.</p>
-                <canvas id="Signature" width="200px" height="90px" >
-                </canvas>
-                <button id="Valider" >Valider</button>
-                <button id="Effacer">Effacer</button>
-            </div>
+          <div id="SignatureBox">
+            <button id="Close">
+              <i class="fa-solid fa-circle-xmark fa-2x"></i>
+            </button>
+            <p>
+              Merci d'appliquer votre signature ci-après pour confirmer votre
+              réservation.
+            </p>
+            <canvas id="Signature" width="200px" height="90px"> </canvas>
+            <button id="Valider">Valider</button>
+            <button id="Effacer">Effacer</button>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
     <footer>
-        <div class="confirmation"></div>
-        <div id="ErrorAlert"></div>
-        <div id ="Timer"></div>
-
+      <div class="confirmation"></div>
+      <div id="ErrorAlert"></div>
+      <div id="Timer"></div>
     </footer>
-    
+
     <script src="/js/class/marqeurs.js"></script>
     <script src="/js/class/map.js"></script>
     <script src="/js/class/reservation.js"></script>
@@ -140,5 +152,5 @@
     <script src="/js/class/canvas.js"></script>
     <script src="/js/class/diapo.js"></script>
     <script src="/js/main.js"></script>
-</body>
+  </body>
 </html>

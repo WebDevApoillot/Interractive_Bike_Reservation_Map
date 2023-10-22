@@ -6,7 +6,6 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #fbe6be;
-  
 }
 
 footer {
@@ -14,64 +13,63 @@ footer {
   width: 100%;
   height: 50px;
   background-color: #fbe6be;
-  
 }
 .topBar {
   display: flex;
-  position:relative;
-  top:0%;
-  min-width:100%;
-  height:80px;
+  position: relative;
+  top: 0%;
+  min-width: 100%;
+  height: 80px;
   background-color: #96500f;
-  margin-bottom:15px;
+  margin-bottom: 15px;
   align-items: center;
 }
 .Logo {
-  border:2px solid #fbe6be;
-  border-radius:10px;
+  border: 2px solid #fbe6be;
+  border-radius: 10px;
   position: relative;
   margin: auto;
-  width:25%;
-  height:65px;
-
+  width: 25%;
+  height: 65px;
 }
 .keypoints {
-  background-color:#96500f ;
-  border-radius:50px;
+  background-color: #96500f;
+  border-radius: 50px;
   position: relative;
   min-height: 100%;
-  width:33%;
+  width: 33%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.icon{
+.icon {
   border: 3px solid #fbe6be;
   margin: 15px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
 }
 .keyPoint {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding:15px;
+  padding: 15px;
   position: relative;
-  left:15%;
+  left: 15%;
 }
-.keypointText{
-  max-width:45%;
+.keypointText {
+  max-width: 45%;
   font-weight: bolder;
-  font-size: larger;
+  font-size: large;
   color: #fbe6be;
-
 }
-.fa-hand-pointer, .fa-pen-nib, .fa-font{
-color:#fbe6be;
+.fa-hand-pointer,
+.fa-pen-nib,
+.fa-font {
+  color: #fbe6be;
 }
 .carousel {
   max-width: 100%;
@@ -85,46 +83,48 @@ color:#fbe6be;
 }
 
 .diaporama {
-  width: 100%;
+  width: 85%;
+  margin: auto;
   /* flex-flow: row wrap; */
   flex-direction: row;
   display: flex;
   justify-content: space-between;
   background-color: #96500f;
   border-radius: 50px;
-  padding:10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .conteneur {
   width: 66%;
+  margin: auto;
   border: 7px solid #ecdbba;
   position: relative;
   right: 2%;
- 
+  height: 100%;
   overflow: hidden;
-  margin:15px;
-  border-radius:50px;
+
+  border-radius: 50px;
 }
 
 h1 {
   text-align: center;
   background-color: #96500f;
   margin: auto;
-  border:1px solid #ecdbba;
-  color:#ecdbba;
+  border: 1px solid #ecdbba;
+  color: #ecdbba;
   border-radius: 15px;
-  padding:10px;
-  margin-bottom:5px;
-  padding-left:20px;
-  padding-right:20px;
-  width:25%;
+  padding: 10px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: fit-content;
 }
-.Interraction{
+.Interraction {
   width: 100%;
-    /* flex-flow: row wrap; */
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
+  /* flex-flow: row wrap; */
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
 }
 .map {
@@ -138,24 +138,24 @@ h1 {
 
 #myMap {
   height: 425px;
-  margin-top:20px;
+  margin-top: 20px;
   border: 6px solid #96500f;
   position: relative;
-  left:3%;
+  left: 3%;
   border-radius: 40px;
   z-index: 1;
   overflow: hidden;
 }
 
-.leaflet-marker-icon{
-  color:#96500f;
+.leaflet-marker-icon {
+  color: #96500f;
 }
 
 .details {
   border: 4px solid #96500f;
   position: relative;
-  border-radius:25px;
-  right:3%;
+  border-radius: 25px;
+  right: 3%;
   width: 25%;
   margin-top: 20px;
   display: flex;
@@ -181,32 +181,35 @@ h1 {
   height: 102%;
 }
 
-.play,.pause{
+.play,
+.pause {
   border-radius: 50%;
-  border:2px solid #fbe6be;
-  padding:0px;
+  border: 2px solid #fbe6be;
+  padding: 0px;
   background-color: #fbe6be;
-  color:#96500f
+  color: #96500f;
 }
-.btndroite,.btngauche{
+.btndroite,
+.btngauche {
   border-radius: 50%;
-  border:2px solid #96500f;
-  padding:0px;
+  border: 2px solid #96500f;
+  padding: 0px;
   background-color: #96500f;
-  color:#fbe6be;
+  color: #fbe6be;
+  margin: 5px;
 }
-.play:hover, 
-.pause:hover{
+.play:hover,
+.pause:hover {
   background-color: #96500f;
-  color:#fbe6be;
-  border:#96500f;
+  color: #fbe6be;
+  border: #96500f;
 }
 
 .btndroite:hover,
 .btngauche:hover {
   background-color: #fbe6be;
-  color:#96500f;
-  border:#fbe6be;
+  color: #96500f;
+  border: #fbe6be;
 }
 /*--------------- Messages d'erreur --------------- */
 
@@ -262,7 +265,7 @@ h1 {
 }
 
 #message {
-  color:#fbe6be;
+  color: #fbe6be;
   border: solid 2px #fbe6be;
   position: absolute;
   width: 200px;
@@ -512,7 +515,7 @@ form button {
     left: 20%;
   }
   #ErrorAlert > text {
-    left: 15%;
+    left: 10%;
 
     font-size: 25px;
   }
@@ -535,17 +538,36 @@ form button {
     left: 0%;
     top: 0%;
     width: 100%;
-    height: 40%;
   }
 
   #myMap {
     position: relative;
     left: 0%;
     top: 0%;
-    width: 100%;
-    height: 100%;
+    width: 95%;
   }
   #Timer {
     line-height: 230%;
+  }
+  @media (min-width: 320px) and (max-width: 768px) {
+    .conteneur {
+      display: none;
+    }
+    .diaporama {
+      flex-flow: row wrap;
+    }
+    .keypoints {
+      width: fit-content;
+    }
+    .keyPoint {
+      flex-direction: column;
+      left: unset;
+    }
+    .keypointText {
+      font-size: medium;
+    }
+    .Interraction {
+      flex-direction: column;
+    }
   }
 }

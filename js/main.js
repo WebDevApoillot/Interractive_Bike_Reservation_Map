@@ -31,15 +31,13 @@ const compteur = new compteurClass(NewCanvas);
 
 let urlApi =
   "https://api.jcdecaux.com/vls/v3/stations?contractName=toulouse&apiKey=15d06d3ae02e1bc50229f94dc7a3ed8b8117b122";
- 
+
 //RECUPERE NOS DONNEES
 fetch(urlApi)
   .then((data) => {
     return data.json();
-    
   })
-  .then((stations) => { 
-   
+  .then((stations) => {
     //LANCEMENT MARKEUR
     const markers = new Marqeurs(map.map, stations, "error");
   });
